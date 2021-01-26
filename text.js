@@ -1,20 +1,15 @@
-var n=new Array();
-n[0]="jyo";
-n[1]="kowshi";
-n[2]="janu";
-n[3]="nandy";
-n[4]="harshi";
-n[5]="Jaswanth";
-n[6]="bunny";
-n[7]="yashu";
-n[8]="bro";
-n[9]="jethin";
+(function () {
 
-for(var i=0;i<n.length;i++){
-	if(n[i].charAt(0)==='j'||n[i].charAt(0)==='J'){
-		console.log("Goodbye  "+n[i])
-	}
-	else{
-		console.log("Hello  "+n[i])
-	}
+var names = ["jyo", "kowshi", "Janu", "Nandy", "bunny", "janaki", "Yashu", "Jaswanth", "harshini", "Neelu"];
+
+for (var i = 0; i < names.length; i++) {
+
+  var firstLetter = names[i].charAt(0).toLowerCase();
+  if (firstLetter === 'j') {
+    byeSpeaker.speak(names[i]);
+  } else {
+    helloSpeaker.speak(names[i]);
+  }
 }
+
+})();
